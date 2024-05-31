@@ -39,7 +39,7 @@
   --secondary-btn-bgcolor: white;
   --banner-bg-color: white;
   --small-bold-text-color: rgb(12, 10, 10);
-  --hover-color: rgb(24, 24, 24);
+  --hover-color: rgb(152, 141, 141);
   --cta-main-section: white;
   --signup-btn-boxshadow: rgb(79, 139, 159);
   --border-color: #444037af;
@@ -88,6 +88,7 @@ h4 {
   margin-inline: auto;
   padding: 5px 20px;
   align-items: center;
+  overflow: hidden;
 }
 
 .flex {
@@ -149,20 +150,16 @@ nav {
 
 .maincontent {
   justify-content: space-between;
- 
 }
 
 .leftcontent {
   display: flex;
   gap: 12px;
   align-items: center;
-  
 }
 
 .rightcontent {
-  flex-basis: 100px;
-  gap: 20px;
-  /* background-color: red; */
+  flex-basis: 400px;
 }
 
 .rightcontent ul {
@@ -173,11 +170,8 @@ nav {
   font-size: 16px;
 }
 
-.theme{
-  gap: 18px;
-  justify-content: end;
-  align-items: end;
-  color: var(--primary-text-color);
+.nav-toggle {
+  display: none;
 }
 .hoverlinks {
   color: var(--primary-text-color);
@@ -306,11 +300,13 @@ nav {
 
 .example-section {
   padding: 80px;
+  /* background-color: red; */
 }
 
 .exampple-section1 {
   text-align: center;
   padding: 20px;
+  /* background-color: yellow; */
 }
 
 .example-text-section {
@@ -318,9 +314,11 @@ nav {
 }
 
 .example-section2 {
-  /* gap: 25px; */
-  justify-content: space-between;
-  margin-block: 30px;
+  gap: 15px; 
+ justify-content: space-between;
+  margin-block: 50px;
+  flex-wrap: wrap;
+
 }
 
 .box2 {
@@ -331,6 +329,7 @@ nav {
   cursor: pointer;
   /* background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url('https://tse1.mm.bing.net/th?id=OIP.NOH8bBZLrC_5WpwupOJNkwHaEX&pid=Api&rs=1&c=1&qlt=95&w=197&h=116'); */
   transition: 0.3s ease-in-out;
+  position: relative;
 }
 
 .box2:hover {
@@ -414,13 +413,13 @@ footer {
 .subfooter-section {
   gap: 20px;
   color: var(--secondary-text-color);
- 
+
   padding: 10px;
 }
 
-.footer-main-textsection{
-  font-size:25px;
+.footer-main-textsection {
+  font-size: 25px;
 }
-.footer-link-text{
+.footer-link-text {
   font-size: 16px;
 }
