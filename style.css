@@ -84,7 +84,7 @@ h4 {
 /*utilities*/
 
 .container {
-  max-width: 1110px;
+  max-width: 1180px;
   margin-inline: auto;
   padding: 5px 20px;
   align-items: center;
@@ -159,13 +159,13 @@ nav {
 }
 
 .rightcontent {
-  flex-basis: 400px;
+  flex-basis: 800px;
 }
 
 .rightcontent ul {
   gap: 18px;
   justify-content: end;
-  align-items: center;
+  
   cursor: pointer;
   font-size: 16px;
 }
@@ -299,8 +299,8 @@ nav {
 /*exapmle section*/
 
 .example-section {
-  padding: 80px;
-  /* background-color: red; */
+  padding:50px;
+ 
 }
 
 .exampple-section1 {
@@ -314,16 +314,17 @@ nav {
 }
 
 .example-section2 {
-  gap: 15px; 
+
  justify-content: space-between;
-  margin-block: 50px;
+  margin-block: 30px;
   flex-wrap: wrap;
+  /* background-color: red; */
 
 }
 
 .box2 {
   width: 23%;
-  min-height: 300px;
+  height: 300px;
   /* background: red; */
   position: relative;
   cursor: pointer;
@@ -369,18 +370,20 @@ nav {
 /*cta section*/
 .cta-mainsection {
   background-color: var(--cta-main-section);
+  padding: 120px 20px 80px;
 }
 
 .cta-container-section {
-  /* align-items: center; */
+ 
   flex-direction: column;
-  padding-block: 6%;
+  /* padding-block: 6%; */
+  gap: 30px;
 }
 
 .cta-text-section {
-  font-size: 20px;
+  font-size: 15px;
   font-family: monospace;
-  padding-block: 50px;
+ 
   color: var(--secondary-text-color);
 }
 

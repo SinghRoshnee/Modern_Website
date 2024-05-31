@@ -1,4 +1,5 @@
-@media screen and (max-width: 991px) {
+
+@media screen and (max-width: 992px) {
   .nav-toggle {
     display: block;
   }
@@ -7,8 +8,17 @@
     display: none;
   }
 
-  /* .example-section2{
-    gap: 20px;
-  } */
-}
+  .example-section2 {
+    gap: 15px;
+  }
 
+  .box2 {
+    /* width: 50%; */
+    width: 48%;
+    height: 180px;
+  }
+
+  .cta-mainsection{
+    padding-block: 80px;
+  }
+}
