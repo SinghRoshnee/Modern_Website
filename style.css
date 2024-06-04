@@ -182,12 +182,16 @@ nav {
 
 /*header section*/
 
+header{
+  padding: 50px 20px 0;
+}
 .header-main {
   justify-content: space-between;
-  margin-top: 3%;
+
 }
 
 .header-side1 {
+  max-width: 40vw;
   align-items: center;
 }
 
@@ -199,15 +203,17 @@ nav {
 }
 
 .header-side2 img {
-  width: 600px;
-  height: 500px;
+  /* width: 600px;
+  height: 500px; */
+  width: 35vw;
+
 }
 
 /*subheader*/
 .sub-header-mainsection {
   margin-top: 5%;
-  align-items: center;
-  padding: 15px;
+  /* align-items: center; */
+  /* padding: 15px; */
 }
 .sub-header-section1 {
   margin-bottom: 12px;
@@ -215,9 +221,12 @@ nav {
 }
 
 .sub-header-section2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  /* align-items: center; */
 }
 
 .box1 {
@@ -228,9 +237,6 @@ nav {
 
 /*feature*/
 
-/* .feature-section-main {
-  margin-top: 5%;
-} */
 
 .main-section {
   margin-top: 5%;
@@ -251,10 +257,10 @@ nav {
 
 .feature-section2 {
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
 
   margin-top: 40px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .box-img {
