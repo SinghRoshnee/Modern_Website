@@ -1,25 +1,43 @@
 @media screen and (max-width: 992px) {
   /* nav bar*/
+
+ 
   .nav-toggle {
     display: block;
-  }
+}
 
-  .maincontent{
+.maincontent {
     overflow: initial;
-  }
-  .rightcontent {
-    position: absolute;
-  }
+}
 
-  .rightcontent ul{
-    flex-direction: column;
-    background-color: red;
-    left: 0;
+.rightcontent {
+    position: absolute;
+    /* background-color:var(--primary-bg-color); */
+    background-color: var(--nav-color);
+    left: -100%;
     top: 100%;
     width: 100%;
-  }
+    padding-block: 20px;
+    transition: left 0.3s ease-in-out;
+}
 
-  
+.rightcontent.active {
+    left: 0;
+}
+
+.rightcontent ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+  --nav-color :rgb(40, 33, 33);
+}
+
+.lighttheme {
+  --nav-color:grey;
+}
+
   /*example section*/
 
   .example-section2 {
@@ -107,7 +125,7 @@
   }
 
   /*topbar*/
-  .image-add{
+  .image-add {
     font-size: 0.8rem;
   }
 
@@ -122,7 +140,8 @@
 
   /*footer*/
 
-  .footer-section, .footer-section2{
-    padding:20px;
+  .footer-section,
+  .footer-section2 {
+    padding: 20px;
   }
 }

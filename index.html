@@ -16,13 +16,14 @@
         </div>
       </div>
       <!--nav bar-->
+
       <nav>
         <div class="container maincontent flex">
           <div class="leftcontent">
             <div class="circle"></div>
             <h1>Usability Hub</h1>
           </div>
-          <div class="rightcontent">
+          <div class="rightcontent" id="rightcontent1">
             <ul class="flex">
               <li><a href="#" class="hoverlinks">Customer</a></li>
               <li><a href="#" class="hoverlinks">Customer</a></li>
@@ -37,8 +38,7 @@
               </a>
             </ul>
           </div>
-
-          <a href="#" class="nav-toggle hoverlinks">
+          <a href="#" class="nav-toggle hoverlinks" id="nav-toggle1">
             <i class="fa-solid fa-bars"></i>
           </a>
         </div>
@@ -301,5 +301,13 @@
       src="https://kit.fontawesome.com/8b29d572ed.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const toggle_btn = document.querySelector(".nav-toggle");
+      const rightcontent = document.querySelector("#rightcontent1");
+
+      toggle_btn.addEventListener("click", () => {
+        rightcontent.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

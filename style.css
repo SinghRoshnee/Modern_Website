@@ -27,6 +27,7 @@
   --cta-main-section: #293238;
   --signup-btn-boxshadow: lightblue;
   --border-color: #b8b7b5af;
+  --nav-color :rgb(40, 33, 33);
 }
 
 .lighttheme {
@@ -43,6 +44,7 @@
   --cta-main-section: white;
   --signup-btn-boxshadow: rgb(79, 139, 159);
   --border-color: #444037af;
+  --nav-color:grey;
 }
 h1 {
   font-size: 2rem;
@@ -141,17 +143,16 @@ h4 {
 }
 
 /*nav bar*/
-
 nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: var(--nav-color);
 }
 
 .maincontent {
   justify-content: space-between;
   position: relative;
-  margin-top: 20px;
 }
 
 .leftcontent {
@@ -165,6 +166,7 @@ nav {
 }
 
 .rightcontent ul {
+  display: flex;
   gap: 18px;
   justify-content: end;
   cursor: pointer;
@@ -174,12 +176,15 @@ nav {
 .nav-toggle {
   display: none;
 }
+
 .hoverlinks {
   color: var(--primary-text-color);
 }
+
 .hoverlinks:hover {
   color: var(--primary-hover-color);
 }
+
 
 /*header section*/
 
