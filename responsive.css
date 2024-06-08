@@ -1,24 +1,128 @@
-
 @media screen and (max-width: 992px) {
+  /* nav bar*/
   .nav-toggle {
     display: block;
   }
 
+  .maincontent{
+    overflow: initial;
+  }
   .rightcontent {
-    display: none;
+    position: absolute;
   }
 
+  .rightcontent ul{
+    flex-direction: column;
+    background-color: red;
+    left: 0;
+    top: 100%;
+    width: 100%;
+  }
+
+  
+  /*example section*/
+
   .example-section2 {
-    gap: 15px;
+    gap: 20px;
   }
 
   .box2 {
-    /* width: 50%; */
-    width: 48%;
+    width: calc(50% - 10px); /* Added spaces around the minus sign */
     height: 180px;
   }
 
-  .cta-mainsection{
+  /* cta section*/
+
+  .cta-mainsection {
     padding-block: 70px;
+  }
+}
+
+/* after changing the width*/
+
+@media screen and (max-width: 767px) {
+  .signupbtn {
+    width: 100%;
+  }
+  .header-main {
+    flex-direction: column-reverse;
+  }
+
+  .header-side1 {
+    max-width: 100vw;
+    text-align: center;
+  }
+
+  /*feature*/
+  .box-img {
+    min-width: calc(50% - 10px);
+  }
+
+  /*image-section*/
+
+  .image-section-main,
+  #second-img-section {
+    flex-direction: column;
+  }
+
+  /*footer*/
+  .footer-section {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section1 {
+    align-items: stretch;
+  }
+}
+
+/* after changing the width*/
+
+@media screen and (max-width: 479px) {
+  /*example section*/
+  .example-section {
+    padding: 20px;
+  }
+
+  /*font-size*/
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+
+  h4 {
+    font-size: 0.6rem;
+  }
+
+  .small-text-bold {
+    font-size: 1.5rem;
+  }
+
+  /*topbar*/
+  .image-add{
+    font-size: 0.8rem;
+  }
+
+  /*feature*/
+  .box-img {
+    min-width: 100%;
+  }
+
+  .box2 {
+    width: 100%;
+  }
+
+  /*footer*/
+
+  .footer-section, .footer-section2{
+    padding:20px;
   }
 }
