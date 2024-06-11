@@ -31,11 +31,11 @@
 }
 
 :root {
-  --nav-color :rgb(40, 33, 33);
+  --nav-color :rgb(22, 16, 16);
 }
 
 .lighttheme {
-  --nav-color:grey;
+  --nav-color:rgb(230, 224, 224);
 }
 
   /*example section*/
